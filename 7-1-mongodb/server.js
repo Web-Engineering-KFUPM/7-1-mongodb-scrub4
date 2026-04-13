@@ -192,8 +192,7 @@ const CONNECTION_STRING =
  
 
 // establish connection
-mongoose
-  .connect(CONNECTION_STRING)
+mongoose.connect(CONNECTION_STRING)
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ Connection failed:", err));
 
